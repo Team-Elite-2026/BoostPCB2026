@@ -253,6 +253,17 @@
 			(uuid "2b5dcdfc-579b-4c8d-b699-6d8cd2b6e13f")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/XL6009_pin.stp"
+			(offset
+				(xyz 3 0 2.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
 		(layer "B.Cu")
@@ -562,7 +573,7 @@
 		(start 36.15 74.5)
 		(end 61.15 74.5)
 		(stroke
-			(width 0)
+			(width 0.1)
 			(type default)
 		)
 		(layer "Edge.Cuts")
@@ -572,7 +583,7 @@
 		(start 36.15 125.5)
 		(end 36.15 74.5)
 		(stroke
-			(width 0)
+			(width 0.1)
 			(type default)
 		)
 		(layer "Edge.Cuts")
@@ -582,7 +593,7 @@
 		(start 36.15 125.5)
 		(end 61.15 125.5)
 		(stroke
-			(width 0)
+			(width 0.1)
 			(type default)
 		)
 		(layer "Edge.Cuts")
@@ -592,11 +603,37 @@
 		(start 61.15 125.5)
 		(end 61.15 74.5)
 		(stroke
-			(width 0)
+			(width 0.1)
 			(type default)
 		)
 		(layer "Edge.Cuts")
 		(uuid "17bb2917-c814-44f7-b884-d6f93e7f353f")
+	)
+	(gr_text "HIGH SIDE (48V)\n"
+		(at 39.1 80.21 0)
+		(layer "F.SilkS")
+		(uuid "1e0acac8-179a-4466-9f45-6bd59c3a6a6f")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "LOW SIDE (12V)\n"
+		(at 57.6 119.71 180)
+		(layer "F.SilkS")
+		(uuid "a37f3830-547e-4864-9070-02017f1e2048")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
 	)
 	(segment
 		(start 50.07 111.39)
@@ -629,30 +666,6 @@
 		(layer "F.Cu")
 		(net "12V")
 		(uuid "8de17ff0-7bd1-40cb-9517-85f04fc25cc3")
-	)
-	(segment
-		(start 40.8 89.81)
-		(end 43.525 89.81)
-		(width 2)
-		(layer "B.Cu")
-		(net "48V")
-		(uuid "1cd4277d-1285-4976-bc8d-77039948fcc5")
-	)
-	(segment
-		(start 38.44 77.02)
-		(end 38.44 87.45)
-		(width 2)
-		(layer "B.Cu")
-		(net "48V")
-		(uuid "2643ddff-9768-4d50-8cc6-5e8272958424")
-	)
-	(segment
-		(start 38.44 87.45)
-		(end 40.8 89.81)
-		(width 2)
-		(layer "B.Cu")
-		(net "48V")
-		(uuid "a7ce63a0-98e0-41a6-98b9-08760176df48")
 	)
 	(segment
 		(start 51.57 84.52)
@@ -701,6 +714,30 @@
 		(layer "B.Cu")
 		(net "GND")
 		(uuid "af21e60e-e385-4271-9925-e1db1032125a")
+	)
+	(segment
+		(start 40.8 89.81)
+		(end 43.525 89.81)
+		(width 2)
+		(layer "B.Cu")
+		(net "48V")
+		(uuid "1cd4277d-1285-4976-bc8d-77039948fcc5")
+	)
+	(segment
+		(start 38.44 77.02)
+		(end 38.44 87.45)
+		(width 2)
+		(layer "B.Cu")
+		(net "48V")
+		(uuid "2643ddff-9768-4d50-8cc6-5e8272958424")
+	)
+	(segment
+		(start 38.44 87.45)
+		(end 40.8 89.81)
+		(width 2)
+		(layer "B.Cu")
+		(net "48V")
+		(uuid "a7ce63a0-98e0-41a6-98b9-08760176df48")
 	)
 	(zone
 		(net "GND")
